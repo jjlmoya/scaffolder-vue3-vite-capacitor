@@ -1,4 +1,4 @@
-# bejaofit
+# scaffolder
 
 ## Project setup
 ```
