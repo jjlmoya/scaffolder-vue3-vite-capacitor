@@ -1,19 +1,13 @@
-import Vue from 'vue'
-import AppVue from './App.vue'
-import store from './store'
-import router from './router'
-import { Plugins } from '@capacitor/core'
-const { App } = Plugins
-Vue.prototype.Screen = window.screen
+import './css/reset.css'
+import './css/variables.css'
+import './css/styles.css'
+import '@capacitor/core'
+import { createApp } from 'vue'
+import App from './App.vue'
+import router from '@/router'
+import store from '@/store'
 
-console.log(App)
-if (process.env.VUE_APP_ENV === 'production') {
-    // PRODUCTION ONLY CODE
-}
-
-new Vue({
-    router,
-    store,
-    mounted () {},
-    render: h => h(AppVue)
-}).$mount('#app')
+createApp(App)
+    .use(store)
+    .use(router)
+    .mount('#app')

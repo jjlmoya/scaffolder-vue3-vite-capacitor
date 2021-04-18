@@ -1,20 +1,8 @@
 {
-  "appId": "com.bejaofit.app",
-  "appName": "beJAOFIT",
+  "appId": "com.core.app",
+  "appName": "Core",
   "bundledWebRuntime": false,
-  "npmClient": "npm",
+  "npmClient": "vite",
   "webDir": "dist",
-  "plugins": {
-    "SplashScreen": {
-      "launchShowDuration": 0,
-      "androidScaleType": "CENTER_CROP",
-      "splashFullScreen": true,
-      "splashImmersive": true
-    },
-    "Keyboard": {
-      "resize": "none",
-      "style": "dark"
-    }
-  },
   "cordova": {}
 }
