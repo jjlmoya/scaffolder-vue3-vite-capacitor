@@ -1,8 +1,0 @@
-{
-	"appId": "com.core.app",
-	"appName": "Core",
-	"bundledWebRuntime": false,
-	"npmClient": "vite",
-	"webDir": "dist",
-	"cordova": {}
-}
